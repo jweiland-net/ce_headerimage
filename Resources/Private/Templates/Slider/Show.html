@@ -1,0 +1,21 @@
+<div class="flexslider noflexnavi">
+	<ul class="slides">
+		<f:for each="{sliders}" as="slider">
+			<li class="clearfix">
+				<div class="sliderimage">
+					<f:cObject typoscriptObjectPath="lib.ceHeaderImageLink" data="{link: slider.link, title: slider.title, content: '{f:image(image: slider.image, alt: \'{slider.title}\', maxWidth: \'757\')}'}" currentValueKey="content" />
+				</div>
+				<div class="sliderdescription">
+					<f:if condition="{slider.link}">
+						<f:then>
+							<f:cObject typoscriptObjectPath="lib.ceHeaderDescLink" data="{link: slider.link, title: slider.title, description: slider.description}"/>
+						</f:then>
+						<f:else>
+							<f:cObject typoscriptObjectPath="lib.ceHeaderDesc" data="{title: slider.title, description: slider.description}"/>
+						</f:else>
+					</f:if>
+				</div>
+			</li>
+		</f:for>
+	</ul>
+</div>

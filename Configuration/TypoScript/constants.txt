@@ -1,0 +1,19 @@
+plugin.tx_ceheaderimage {
+  view {
+    # cat=plugin.tx_ceheaderimage/file; type=string; label=Path to template root (FE)
+    templateRootPath = EXT:ce_headerimage/Resources/Private/Templates/
+    # cat=plugin.tx_ceheaderimage/file; type=string; label=Path to template partials (FE)
+    partialRootPath = EXT:ce_headerimage/Resources/Private/Partials/
+    # cat=plugin.tx_ceheaderimage/file; type=string; label=Path to template layouts (FE)
+    layoutRootPath = EXT:ce_headerimage/Resources/Private/Layouts/
+  }
+
+  persistence {
+    # cat=plugin.tx_ceheaderimage//a; type=string; label=Default storage PID
+    storagePid =
+  }
+
+  settings {
+
+  }
+}

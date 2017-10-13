@@ -1,0 +1,30 @@
+<T3DataStructure>
+	<meta>
+		<langDisable>1</langDisable>
+	</meta>
+	<sheets>
+		<sDEFAULT>
+			<ROOT>
+				<TCEforms>
+					<sheetTitle>LLL:EXT:ce_headerimage/Resources/Private/Language/FlexForms.xlf:sheetGeneral</sheetTitle>
+				</TCEforms>
+				<type>array</type>
+				<el>
+					<settings.sliders>
+						<TCEforms>
+							<label>LLL:EXT:ce_headerimage/Resources/Private/Language/FlexForms.xlf:sliders</label>
+							<config>
+								<type>group</type>
+								<internal_type>db</internal_type>
+								<allowed>tx_ceheaderimage_domain_model_slider</allowed>
+								<size>5</size>
+								<maxitems>5</maxitems>
+								<minitems>0</minitems>
+							</config>
+						</TCEforms>
+					</settings.sliders>
+				</el>
+			</ROOT>
+		</sDEFAULT>
+	</sheets>
+</T3DataStructure>

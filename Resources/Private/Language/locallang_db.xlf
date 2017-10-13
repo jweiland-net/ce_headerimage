@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2013-04-58T08:30:58Z" product-name="ce_headerimage">
+		<header/>
+		<body>
+
+			<trans-unit id="plugin.title">
+				<source>Header Image Slider</source>
+			</trans-unit>
+
+			<trans-unit id="tabs.category">
+				<source>Category</source>
+			</trans-unit>
+
+			<trans-unit id="tx_ceheaderimage_domain_model_slider">
+				<source>Club</source>
+			</trans-unit>
+			<trans-unit id="tx_ceheaderimage_domain_model_slider.title">
+				<source>Title</source>
+			</trans-unit>
+			<trans-unit id="tx_ceheaderimage_domain_model_slider.description">
+				<source>Description</source>
+			</trans-unit>
+			<trans-unit id="tx_ceheaderimage_domain_model_slider.image">
+				<source>Image</source>
+			</trans-unit>
+			<trans-unit id="tx_ceheaderimage_domain_model_slider.link">
+				<source>Link</source>
+			</trans-unit>
+
+		</body>
+	</file>
+</xliff>

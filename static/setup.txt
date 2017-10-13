@@ -1,0 +1,10 @@
+tt_content.headerimage < tt_content.image
+
+#tt_content.headerimage = IMAGE
+#tt_content.headerimage.file {
+#	import.field = image
+#	import.listNum = 0
+#	treatIdAsReference = 1
+#	width = 300
+#	height = 150
+#}

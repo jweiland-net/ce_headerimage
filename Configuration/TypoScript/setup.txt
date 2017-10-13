@@ -1,0 +1,74 @@
+plugin.tx_ceheaderimage {
+  view {
+    templateRootPaths {
+      0 = EXT:ce_headerimage/Resources/Private/Templates/
+      1 = {$plugin.tx_ceheaderimage.view.templateRootPath}
+    }
+    partialRootPaths {
+      0 = EXT:ce_headerimage/Resources/Private/Partials/
+      1 = {$plugin.tx_ceheaderimage.view.partialRootPath}
+    }
+    layoutRootPaths {
+      0 = EXT:ce_headerimage/Resources/Private/Layouts/
+      1 = {$plugin.tx_ceheaderimage.view.layoutRootPath}
+    }
+  }
+
+  persistence {
+    storagePid = {$plugin.tx_ceheaderimage.persistence.storagePid}
+    classes {
+      JWeiland\CeHeaderimage\Domain\Model\FileReference {
+        mapping {
+          tableName = sys_file_reference
+        }
+      }
+    }
+  }
+
+  features {
+    # uncomment the following line to enable the new Property Mapper.
+    rewrittenPropertyMapper = 1
+  }
+
+  settings {
+
+  }
+}
+
+lib.ceHeaderImageLink = TEXT
+lib.ceHeaderImageLink {
+  current = 1
+  typolink.parameter.field = link
+  typolink.title.field = title
+}
+
+lib.ceHeaderDescLink = COA
+lib.ceHeaderDescLink.10 = TEXT
+lib.ceHeaderDescLink.10.field = title
+lib.ceHeaderDescLink.10.typolink {
+  parameter.field = link
+  title.field = title
+}
+
+lib.ceHeaderDescLink.10.wrap = <div class="title">|</div>
+
+lib.ceHeaderDescLink.20 = TEXT
+lib.ceHeaderDescLink.20.field = description
+lib.ceHeaderDescLink.20.typolink {
+  parameter.field = link
+  title.field = title
+}
+
+lib.ceHeaderDescLink.20.wrap = <div class="description">|</div>
+
+plugin.tx_ceheaderimage._CSS_DEFAULT_STYLE (
+	textarea.f3-form-error {
+		background-color:#FF9F9F;
+		border: 1px #FF0000 solid;
+	}
+
+	input.f3-form-error {
+		background-color:#FF9F9F;
+		border: 1px #FF0000 solid;
+	}
+)

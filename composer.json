@@ -1,0 +1,33 @@
+{
+    "name": "jweiland/ce_headerimage",
+    "type": "typo3-cms-extension",
+    "description": "add new content element",
+    "version": "1.0.0",
+    "license": "GPL-2.0+",
+    "keywords": ["typo3", "TYPO3 CMS", "ce_headerimage"],
+    "homepage": "http://www.jweiland.net",
+    "authors": [
+      {
+        "name": "Stefan Froemken",
+        "email": "sfroemken@jweiland.net",
+        "role": "Lead Developer"
+      }
+    ],
+    "support": {
+      "email": "projects@jweiland.net",
+      "issues": "https://github.com/jweiland-net/ce_headerimage/issues",
+      "source": "https://github.com/jweiland-net/ce_headerimage"
+    },
+    "require": {
+      "php": ">=7.0.0<8.0",
+      "typo3/cms-core": ">=8.7.0,<9.0",
+    },
+    "require-dev": {
+      "phpunit/phpunit": "~4.8.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "JWeiland\\CeHeaderimage\\": "Classes"
+        }
+    }
+}
