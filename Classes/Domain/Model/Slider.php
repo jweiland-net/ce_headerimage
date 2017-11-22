@@ -41,7 +41,7 @@ class Slider extends AbstractEntity
     /**
      * image
      *
-     * @var FileReference
+     * @var \JWeiland\CeHeaderimage\Domain\Model\FileReference
      */
     protected $image;
 
