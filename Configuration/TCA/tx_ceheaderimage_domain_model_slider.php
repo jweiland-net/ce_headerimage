@@ -1,9 +1,4 @@
 <?php
-if (\TYPO3\CMS\Core\Utility\GeneralUtility::compat_version('7.6')) {
-    $ttContentLanguageFile = 'LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf';
-} else {
-    $ttContentLanguageFile = 'LLL:EXT:cms/locallang_ttc.xlf';
-}
 return [
     'ctrl' => [
         'title' => 'LLL:EXT:ce_headerimage/Resources/Private/Language/locallang_db.xlf:tx_ceheaderimage_domain_model_slider',
@@ -32,14 +27,20 @@ return [
         'showRecordFieldList' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, title, description, image, link'
     ],
     'types' => [
-        '1' => ['showitem' => 'sys_language_uid;;;;1-1-1, l10n_parent, l10n_diffsource, hidden;;1, title, description, image, link,--div--;' . $ttContentLanguageFile . ':tabs.access,starttime, endtime']
+        '1' => [
+            'showitem' => 'sys_language_uid;;;;1-1-1, l10n_parent, l10n_diffsource, hidden;;1, title, description, image, link,
+            --div--;LLL:EXT:frontend/Resources/Private/Language/locallang_tca.xlf:pages.tabs.access, 
+            --palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_tca.xlf:pages.palettes.access;access'
+        ]
     ],
     'palettes' => [
-        '1' => ['showitem' => '']
+        'access' => [
+            'showitem' => 'starttime;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:starttime_formlabel,endtime;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:endtime_formlabel',
+        ]
     ],
     'columns' => [
         'sys_language_uid' => [
-            'exclude' => 1,
+            'exclude' => true,
             'label' => 'LLL:EXT:lang/locallang_general.xlf:LGL.language',
             'config' => [
                 'type' => 'select',
@@ -56,21 +57,19 @@ return [
             ]
         ],
         'l10n_parent' => [
-            'exclude' => 1,
             'displayCond' => 'FIELD:sys_language_uid:>:0',
+            'exclude' => true,
             'label' => 'LLL:EXT:lang/locallang_general.xlf:LGL.l18n_parent',
             'config' => [
                 'type' => 'select',
                 'renderType' => 'selectSingle',
                 'items' => [
-                    [
-                        '',
-                        0
-                    ]
+                    ['', 0],
                 ],
-                'foreign_table' => 'tt_content',
-                'foreign_table_where' => 'AND tt_content.pid=###CURRENT_PID### AND tt_content.sys_language_uid IN (-1,0)',
-                'default' => 0
+                'foreign_table' => 'tx_ceheaderimage_domain_model_slider',
+                'foreign_table_where' => 'AND tx_ceheaderimage_domain_model_slider.pid=###CURRENT_PID### AND tx_ceheaderimage_domain_model_slider.sys_language_uid IN (-1,0)',
+                'showIconTable' => false,
+                'default' => 0,
             ]
         ],
         'l10n_diffsource' => [
@@ -88,7 +87,7 @@ return [
             ]
         ],
         'hidden' => [
-            'exclude' => 1,
+            'exclude' => true,
             'label' => 'LLL:EXT:lang/locallang_general.xlf:LGL.hidden',
             'config' => [
                 'type' => 'check',
@@ -100,7 +99,7 @@ return [
             ]
         ],
         'starttime' => [
-            'exclude' => 1,
+            'exclude' => true,
             'label' => 'LLL:EXT:lang/locallang_general.xlf:LGL.starttime',
             'config' => [
                 'type' => 'input',
@@ -112,7 +111,7 @@ return [
             'l10n_display' => 'defaultAsReadonly'
         ],
         'endtime' => [
-            'exclude' => 1,
+            'exclude' => true,
             'label' => 'LLL:EXT:lang/locallang_general.xlf:LGL.endtime',
             'config' => [
                 'type' => 'input',
@@ -127,7 +126,7 @@ return [
             'l10n_display' => 'defaultAsReadonly'
         ],
         'title' => [
-            'exclude' => 1,
+            'exclude' => true,
             'label' => 'LLL:EXT:ce_headerimage/Resources/Private/Language/locallang_db.xlf:tx_ceheaderimage_domain_model_slider.title',
             'config' => [
                 'type' => 'input',
@@ -136,7 +135,7 @@ return [
             ]
         ],
         'description' => [
-            'exclude' => 1,
+            'exclude' => true,
             'label' => 'LLL:EXT:ce_headerimage/Resources/Private/Language/locallang_db.xlf:tx_ceheaderimage_domain_model_slider.description',
             'config' => [
                 'type' => 'text',
@@ -146,7 +145,7 @@ return [
             ]
         ],
         'image' => [
-            'exclude' => 1,
+            'exclude' => true,
             'label' => 'LLL:EXT:ce_headerimage/Resources/Private/Language/locallang_db.xlf:tx_ceheaderimage_domain_model_slider.image',
             'config' => \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::getFileFieldTCAConfig(
                 'image',
@@ -157,7 +156,7 @@ return [
             )
         ],
         'link' => [
-            'exclude' => 1,
+            'exclude' => true,
             'label' => 'LLL:EXT:ce_headerimage/Resources/Private/Language/locallang_db.xlf:tx_ceheaderimage_domain_model_slider.link',
             'config' => [
                 'type' => 'input',
