@@ -1,28 +1,33 @@
 {
-    "name": "jweiland/ce-headerimage",
-    "type": "typo3-cms-extension",
-    "description": "add new content element",
-    "license": "GPL-2.0-or-later",
-    "keywords": ["typo3", "TYPO3 CMS", "ce_headerimage", "ce", "headerimage"],
-    "homepage": "http://www.jweiland.net",
-    "authors": [
-      {
-        "name": "Stefan Froemken",
-        "email": "sfroemken@jweiland.net",
-        "role": "Lead Developer"
-      }
-    ],
-    "support": {
-      "email": "projects@jweiland.net",
-      "issues": "https://github.com/jweiland-net/ce_headerimage/issues",
-      "source": "https://github.com/jweiland-net/ce_headerimage"
-    },
-    "require": {
-      "typo3/cms-core": ">=8.7.0,<8.8"
-    },
-    "autoload": {
-        "psr-4": {
-            "JWeiland\\CeHeaderimage\\": "Classes"
-        }
-    }
+	"name": "jweiland/ce-headerimage",
+	"type": "typo3-cms-extension",
+	"description": "add new content element",
+	"license": "GPL-2.0-or-later",
+	"keywords": ["typo3", "TYPO3 CMS", "ce_headerimage", "ce", "headerimage"],
+	"homepage": "http://www.jweiland.net",
+	"authors": [
+		{
+			"name": "Stefan Froemken",
+			"email": "sfroemken@jweiland.net",
+			"role": "Lead Developer"
+		}
+	],
+	"support": {
+		"email": "projects@jweiland.net",
+		"issues": "https://github.com/jweiland-net/ce_headerimage/issues",
+		"source": "https://github.com/jweiland-net/ce_headerimage"
+	},
+	"require": {
+		"typo3/cms-core": "^9.5.17 || ^10.4.2"
+	},
+	"extra": {
+		"typo3/cms": {
+			"extension-key": "ce_headerimage"
+		}
+	},
+	"autoload": {
+		"psr-4": {
+			"JWeiland\\CeHeaderimage\\": "Classes"
+		}
+	}
 }

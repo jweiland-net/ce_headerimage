@@ -66,11 +66,12 @@ class Slider extends AbstractEntity
      * Sets the title
      *
      * @param string $title
-     * @return void
+     * @return Slider
      */
-    public function setTitle(string $title)
+    public function setTitle(string $title): Slider
     {
         $this->title = $title;
+        return $this;
     }
 
     /**
@@ -87,11 +88,12 @@ class Slider extends AbstractEntity
      * Sets the description
      *
      * @param string $description
-     * @return void
+     * @return Slider
      */
-    public function setDescription(string $description)
+    public function setDescription(string $description): Slider
     {
         $this->description = $description;
+        return $this;
     }
 
     /**
@@ -99,7 +101,7 @@ class Slider extends AbstractEntity
      *
      * @return FileReference $image
      */
-    public function getImage()
+    public function getImage(): ?FileReference
     {
         return $this->image;
     }
@@ -108,11 +110,12 @@ class Slider extends AbstractEntity
      * Sets the image
      *
      * @param FileReference $image
-     * @return void
+     * @return Slider
      */
-    public function setImage(FileReference $image)
+    public function setImage(FileReference $image): Slider
     {
         $this->image = $image;
+        return $this;
     }
 
     /**
@@ -129,10 +132,11 @@ class Slider extends AbstractEntity
      * Sets the link
      *
      * @param string $link
-     * @return void
+     * @return Slider
      */
-    public function setLink(string $link)
+    public function setLink(string $link): Slider
     {
         $this->link = $link;
+        return $this;
     }
 }

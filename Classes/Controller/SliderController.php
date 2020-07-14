@@ -51,12 +51,11 @@ class SliderController extends ActionController
      *
      * @return void
      */
-    public function showAction()
+    public function showAction(): void
     {
         $uids = GeneralUtility::trimExplode(',', $this->settings['sliders'], true);
         if (is_array($uids) && count($uids)) {
-            /** @var ObjectStorage $sliders */
-            $sliders = $this->objectManager->get(ObjectStorage::class);
+            $sliders = GeneralUtility::makeInstance(ObjectStorage::class);
             foreach ($uids as $uid) {
                 /** @var Slider $slider */
                 $slider = $this->sliderRepository->findByUid($uid);

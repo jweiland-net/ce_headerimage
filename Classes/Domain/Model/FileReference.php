@@ -64,11 +64,12 @@ class FileReference extends \TYPO3\CMS\Extbase\Domain\Model\FileReference
      * Sets the title
      *
      * @param string $title
-     * @return void
+     * @return FileReference
      */
-    public function setTitle(string $title)
+    public function setTitle(string $title): FileReference
     {
         $this->title = $title;
+        return $this;
     }
 
     /**
@@ -85,11 +86,12 @@ class FileReference extends \TYPO3\CMS\Extbase\Domain\Model\FileReference
      * Sets the cruserId
      *
      * @param int $cruserId
-     * @return void
+     * @return FileReference
      */
-    public function setCruserId(int $cruserId)
+    public function setCruserId(int $cruserId): FileReference
     {
         $this->cruserId = $cruserId;
+        return $this;
     }
 
     /**
@@ -106,11 +108,12 @@ class FileReference extends \TYPO3\CMS\Extbase\Domain\Model\FileReference
      * Sets the uidLocal
      *
      * @param int $uidLocal
-     * @return void
+     * @return FileReference
      */
-    public function setUidLocal(int $uidLocal)
+    public function setUidLocal(int $uidLocal): FileReference
     {
         $this->uidLocal = $uidLocal;
+        return $this;
     }
 
     /**
@@ -127,10 +130,11 @@ class FileReference extends \TYPO3\CMS\Extbase\Domain\Model\FileReference
      * Sets the tablenames
      *
      * @param string $tablenames
-     * @return void
+     * @return FileReference
      */
-    public function setTablenames(string $tablenames)
+    public function setTablenames(string $tablenames): FileReference
     {
         $this->tablenames = $tablenames;
+        return $this;
     }
 }
