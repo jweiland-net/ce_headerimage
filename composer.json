@@ -20,14 +20,29 @@
 	"require": {
 		"typo3/cms-core": "^9.5.17 || ^10.4.2"
 	},
-	"extra": {
-		"typo3/cms": {
-			"extension-key": "ce_headerimage"
-		}
+	"require-dev": {
+		"friendsofphp/php-cs-fixer": "^2.0",
+		"nimut/testing-framework": "^5.0"
 	},
 	"autoload": {
 		"psr-4": {
 			"JWeiland\\CeHeaderimage\\": "Classes"
 		}
+	},
+	"config": {
+		"vendor-dir": ".build/vendor"
+	},
+	"extra": {
+		"typo3/cms": {
+			"extension-key": "ce_headerimage",
+			"app-dir": ".build",
+			"web-dir": ".build/public"
+		}
+	},
+	"scripts": {
+		"php:fix": ".build/vendor/bin/php-cs-fixer --config=Build/.php_cs.php fix Classes Tests",
+		"ci:php:lint": "find *.php Classes Configuration Tests -name '*.php' -print0 | xargs -0 -n 1 -P 4 php -l",
+		"ci:php:fixer": ".build/vendor/bin/php-cs-fixer --config=Build/.php_cs.php fix --dry-run -v --show-progress=dots --diff-format=udiff Classes Tests",
+		"ci:tests:unit": ".build/vendor/bin/phpunit -c .build/vendor/nimut/testing-framework/res/Configuration/UnitTests.xml Tests/Unit"
 	}
 }
