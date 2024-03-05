@@ -3,33 +3,33 @@
   <file source-language="en" datatype="plaintext" original="messages" date="2013-04-58T08:30:58Z" product-name="ce_headerimage" target-language="de">
     <header/>
     <body>
-      <trans-unit id="plugin.title">
+      <trans-unit id="plugin.title" approved="yes">
         <source>Header Image Slider</source>
-        <target state="needs-translation">Header Image Slider</target>
+        <target state="final">Bildwechsel im Kopfbereich</target>
       </trans-unit>
-      <trans-unit id="tabs.category">
+      <trans-unit id="tabs.category" approved="yes">
         <source>Category</source>
-        <target state="needs-translation">Category</target>
+        <target state="final">Kategorie</target>
       </trans-unit>
-      <trans-unit id="tx_ceheaderimage_domain_model_slider">
+      <trans-unit id="tx_ceheaderimage_domain_model_slider" approved="yes">
         <source>Slider</source>
-        <target state="needs-translation">Slider</target>
+        <target state="final">Slider</target>
       </trans-unit>
-      <trans-unit id="tx_ceheaderimage_domain_model_slider.title">
+      <trans-unit id="tx_ceheaderimage_domain_model_slider.title" approved="yes">
         <source>Title</source>
-        <target state="needs-translation">Title</target>
+        <target state="final">Titel</target>
       </trans-unit>
-      <trans-unit id="tx_ceheaderimage_domain_model_slider.description">
+      <trans-unit id="tx_ceheaderimage_domain_model_slider.description" approved="yes">
         <source>Description</source>
-        <target state="needs-translation">Description</target>
+        <target state="final">Beschreibung</target>
       </trans-unit>
-      <trans-unit id="tx_ceheaderimage_domain_model_slider.image">
+      <trans-unit id="tx_ceheaderimage_domain_model_slider.image" approved="yes">
         <source>Image</source>
-        <target state="needs-translation">Image</target>
+        <target state="final">Bild</target>
       </trans-unit>
-      <trans-unit id="tx_ceheaderimage_domain_model_slider.link">
+      <trans-unit id="tx_ceheaderimage_domain_model_slider.link" approved="yes">
         <source>Link</source>
-        <target state="needs-translation">Link</target>
+        <target state="final">Link</target>
       </trans-unit>
     </body>
   </file>
