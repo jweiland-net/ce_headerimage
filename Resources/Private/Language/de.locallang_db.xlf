@@ -1,40 +1,36 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <xliff version="1.0">
-	<file source-language="en" datatype="plaintext" original="messages" date="2013-04-58T08:30:58Z" product-name="ce_headerimage">
-		<header/>
-		<body>
-
-			<trans-unit id="plugin.title">
-				<source>Header Image Slider</source>
-				<target>Bildwechsel im Kopfbereich</target>
-			</trans-unit>
-
-			<trans-unit id="tabs.category">
-				<source>Category</source>
-				<target>Kategorie</target>
-			</trans-unit>
-
-			<trans-unit id="tx_ceheaderimage_domain_model_slider">
-				<source>Slider</source>
-				<target>Slider</target>
-			</trans-unit>
-			<trans-unit id="tx_ceheaderimage_domain_model_slider.title">
-				<source>Title</source>
-				<target>Titel</target>
-			</trans-unit>
-			<trans-unit id="tx_ceheaderimage_domain_model_slider.description">
-				<source>Description</source>
-				<target>Beschreibung</target>
-			</trans-unit>
-			<trans-unit id="tx_ceheaderimage_domain_model_slider.image">
-				<source>Image</source>
-				<target>Bild</target>
-			</trans-unit>
-			<trans-unit id="tx_ceheaderimage_domain_model_slider.link">
-				<source>Link</source>
-				<target>Link (Bei Veranstaltungen URL der Detailansicht eingeben)</target>
-			</trans-unit>
-
-		</body>
-	</file>
+  <file source-language="en" datatype="plaintext" original="messages" date="2013-04-58T08:30:58Z" product-name="ce_headerimage" target-language="de">
+    <header/>
+    <body>
+      <trans-unit id="plugin.title" approved="yes">
+        <source>Header Image Slider</source>
+        <target state="final">Bildwechsel im Kopfbereich</target>
+      </trans-unit>
+      <trans-unit id="tabs.category" approved="yes">
+        <source>Category</source>
+        <target state="final">Kategorie</target>
+      </trans-unit>
+      <trans-unit id="tx_ceheaderimage_domain_model_slider" approved="yes">
+        <source>Slider</source>
+        <target state="final">Slider</target>
+      </trans-unit>
+      <trans-unit id="tx_ceheaderimage_domain_model_slider.title" approved="yes">
+        <source>Title</source>
+        <target state="final">Titel</target>
+      </trans-unit>
+      <trans-unit id="tx_ceheaderimage_domain_model_slider.description" approved="yes">
+        <source>Description</source>
+        <target state="final">Beschreibung</target>
+      </trans-unit>
+      <trans-unit id="tx_ceheaderimage_domain_model_slider.image" approved="yes">
+        <source>Image</source>
+        <target state="final">Bild</target>
+      </trans-unit>
+      <trans-unit id="tx_ceheaderimage_domain_model_slider.link" approved="yes">
+        <source>Link</source>
+        <target state="final">Link</target>
+      </trans-unit>
+    </body>
+  </file>
 </xliff>
