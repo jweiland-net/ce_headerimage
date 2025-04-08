@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff version="1.0">
+  <file source-language="en" datatype="plaintext" original="messages" date="2013-04-58T08:30:58Z" product-name="ce_headerimage" target-language="da">
+    <header/>
+    <body>
+      <trans-unit id="plugin.title">
+        <source>Header Image Slider</source>
+        <target state="needs-translation">Header Image Slider</target>
+      </trans-unit>
+      <trans-unit id="tabs.category">
+        <source>Category</source>
+        <target state="needs-translation">Category</target>
+      </trans-unit>
+      <trans-unit id="tx_ceheaderimage_domain_model_slider">
+        <source>Slider</source>
+        <target state="needs-translation">Slider</target>
+      </trans-unit>
+      <trans-unit id="tx_ceheaderimage_domain_model_slider.title">
+        <source>Title</source>
+        <target state="needs-translation">Title</target>
+      </trans-unit>
+      <trans-unit id="tx_ceheaderimage_domain_model_slider.description">
+        <source>Description</source>
+        <target state="needs-translation">Description</target>
+      </trans-unit>
+      <trans-unit id="tx_ceheaderimage_domain_model_slider.image">
+        <source>Image</source>
+        <target state="needs-translation">Image</target>
+      </trans-unit>
+      <trans-unit id="tx_ceheaderimage_domain_model_slider.link">
+        <source>Link</source>
+        <target state="needs-translation">Link</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
