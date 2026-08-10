@@ -5,31 +5,31 @@
     <body>
       <trans-unit id="plugin.title">
         <source>Header Image Slider</source>
-        <target state="needs-translation">Header Image Slider</target>
+        <target state="translated">Fejléckép-csúszka</target>
       </trans-unit>
       <trans-unit id="tabs.category">
         <source>Category</source>
-        <target state="needs-translation">Category</target>
+        <target state="translated">Kategória</target>
       </trans-unit>
       <trans-unit id="tx_ceheaderimage_domain_model_slider">
         <source>Slider</source>
-        <target state="needs-translation">Slider</target>
+        <target state="translated">Csúszka</target>
       </trans-unit>
       <trans-unit id="tx_ceheaderimage_domain_model_slider.title">
         <source>Title</source>
-        <target state="needs-translation">Title</target>
+        <target state="translated">Cím</target>
       </trans-unit>
       <trans-unit id="tx_ceheaderimage_domain_model_slider.description">
         <source>Description</source>
-        <target state="needs-translation">Description</target>
+        <target state="translated">Leírás</target>
       </trans-unit>
       <trans-unit id="tx_ceheaderimage_domain_model_slider.image">
         <source>Image</source>
-        <target state="needs-translation">Image</target>
+        <target state="translated">Kép</target>
       </trans-unit>
       <trans-unit id="tx_ceheaderimage_domain_model_slider.link">
         <source>Link</source>
-        <target state="needs-translation">Link</target>
+        <target state="translated">Hivatkozás</target>
       </trans-unit>
     </body>
   </file>
